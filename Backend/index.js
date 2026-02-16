@@ -26,6 +26,9 @@ try {
 } catch (error) {
     console.log("Error: ", error);
 }
+app.get("/", (req, res) => {
+  res.send("Bookstore API Running 🚀");
+});
 
 // defining routes
 app.use("/book", bookRoute);
